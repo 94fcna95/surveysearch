@@ -1,6 +1,9 @@
 # surveysearch
 
-Search and examine variables across survey datasets with ease.
+Provides tools to search for variables across multiple survey datasets,
+examine variable properties (labels, values, missingness), and explore variable
+context within datasets. Useful for navigating complex survey data with many
+variables and understanding variable relationships and metadata.
 
 ## Overview
 
