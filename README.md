@@ -1,6 +1,6 @@
 # surveysearch
 
-Efficiently navigate and understand large survey datasets with variable discovery and exploration tools. Whether you're exploring unfamiliar survey data or validating variable availability across datasets `surveysearch` can help streamline and simplify the ordeal.
+Efficiently navigate and understand large survey datasets with variable discovery and exploration tools. Whether you're exploring unfamiliar survey data or validating variable availability across datasets `surveysearch` can help.
 
 - **Discover** variables by searching across multiple datasets simultaneously, matching both variable names and descriptive labels
 - **Understand** variable characteristics at a glance—including labels, data types, missing patterns, and value distributions  
