@@ -12,7 +12,7 @@ Install from GitHub:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("malo-raballand/surveysearch")
+devtools::install_github("94fcna95/surveysearch")
 ```
 
 ## Quick Start
