@@ -1,6 +1,6 @@
 # surveysearch
 
-Efficiently navigate and understand large survey datasets with variable discovery and exploration tools. Whether you're exploring unfamiliar survey data or validating variable availability across datasets `surveysearch` can help.
+Efficiently navigate and understand large survey datasets with variable discovery and exploration tools. Whether you're exploring unfamiliar survey data or validating variable availability across datasets, `surveysearch` can help.
 
 - **Discover** variables by searching across multiple datasets simultaneously, matching both variable names and descriptive labels
 - **Understand** variable characteristics at a glance—including labels, data types, missing patterns, and value distributions  
@@ -8,9 +8,12 @@ Efficiently navigate and understand large survey datasets with variable discover
 
 ## Installation
 
-Install from GitHub:
+Install from CRAN or github:
 
 ```r
+install.packages("surveysearch")
+library(surveysearch)
+
 # install.packages("devtools")
 devtools::install_github("94fcna95/surveysearch")
 ```
@@ -26,7 +29,7 @@ library(surveysearch)
 survey_2023 <- read.csv("survey_2023.csv")
 survey_2024 <- read.csv("survey_2024.csv")
 
-# Search across both datasets at once
+# Create dataset list in order to search across both at once
 my_datasets <- list(survey_2023 = survey_2023, survey_2024 = survey_2024)
 
 search_variables("income", data_list = my_datasets)
@@ -63,7 +66,13 @@ show_variable_context("q15", data = survey_2023, before = 10, after = 3)
 ## Additional information 
 - **Base-R compatible**: Works seamlessly with Base-R operations—chain results with `|`, `subset()`, `merge()`, and other standard functions
 - **Export-ready**: Results can be easily formatted for LaTeX tables, CSV files, or integrated into larger analytical pipelines
-- **Package is currently in further testing and development, any insight/recommendations is welcome. CRAN publication submitted**
+- **Package** is currently published to CRAN directly, and you can view the help functions directly in your R session
+
+## Improving the package
+What started out as a tool used during a research internship made it's way to CRAN because I realized how useful it could be. Nonetheless, certain developments and improvements could be made, and I intend to oversee possible extensions, including but not limited to : 
+- Better quality documentation in the CRAN repository for first-time users
+- New functinalities for 'examine_variable' such as LaTeX export compatibility, multiple variables at the same time, frequency tables in %, histograms, etc..
+- Any and all comments are welcome! Please fork this repository or contact me directly via the email provided below
 
 ## Functions
 
